@@ -42,6 +42,9 @@ supabase/.branches
 supabase/.temp
 supabase/snippets
 
+# backups locales de la BD
+/backups
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
