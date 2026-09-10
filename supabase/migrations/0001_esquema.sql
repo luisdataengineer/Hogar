@@ -33,7 +33,7 @@ create type public.origen_registro as enum ('manual', 'correo', 'importado');
 create table public.hogares (
   id                 uuid primary key default gen_random_uuid(),
   nombre             text not null check (length(trim(nombre)) > 0),
-  codigo_invitacion  text not null unique default encode(gen_random_bytes(6), 'hex'),
+  codigo_invitacion  text not null unique default encode(extensions.gen_random_bytes(6), 'hex'),
   creado_en          timestamptz not null default now()
 );
 
