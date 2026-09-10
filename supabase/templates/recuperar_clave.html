@@ -1,0 +1,10 @@
+<h2>Cambia tu clave</h2>
+<p>Haz clic para elegir una clave nueva. El enlace vence en una hora.</p>
+<p>
+  <a
+    href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=recovery&next=/recuperar/nueva-clave"
+  >
+    Cambiar mi clave
+  </a>
+</p>
+<p>Si no lo pediste, ignora este correo.</p>
